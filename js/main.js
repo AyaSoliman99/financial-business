@@ -1,4 +1,11 @@
+// loader
+var loader=document.getElementById("loader");
+window.addEventListener("load",function(){
+    loader.style.display="none";
+});
 
+
+// start menu
 let navBar=document.querySelector(".navbar")
 let navBarLinks=document.querySelectorAll(".nav-link")
 let logo=document.querySelector(".navbar-brand")
@@ -148,4 +155,4 @@ if(linksOfAllPages[linksOfAllPages.length-1].textContent=="one page"){
     linksOfAllPages[linksOfAllPages.length-1].textContent="one page";
     linksOfAllPages[linksOfAllPages.length-1].setAttribute("href","index.html")
 }
-})
+});
